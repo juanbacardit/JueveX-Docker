@@ -1,0 +1,29 @@
+Step 1: Create a certificate to share between Azure machine and
+
+openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout AzureOSS.pem -out AzureOSS.pem
+openssl pkcs12 -export -out AzureOSS.pfx -in AzureOSS.pem -name "AzureOSS Juan Bacardit Certificate"
+openssl x509 -inform pem -AzureOSS.pem -outform der -out AzureOSS.cer
+
+Step2: install .cer at azure SubscriptionID
+
+Step 3: Create the docker daemon machine.
+=============================================
+docker-machine create -d azure --azure-subscription-id="XXXXXXXXXXXXXXXXXXXXXXXXXXXXX" --azure-subscription-cert="AzureOSS.pem" JueveXDockerHost
+
+
+Step 4: Set the environment to access docker host
+docker-machine env JueveXDockerHost
+
+Step 5: Create the images
+docker build -t "name_of_image" ./relative/path/to/dockerfile
+
+Step 6: Create the containers...
+docker create -p publitPort:internalPort --name="NameOfContainer" ImageName
+
+Step 7: Run the container
+docker start "NameOfContainer"
+
+
+The Future:
+===============================================
+https://azure.microsoft.com/en-us/blog/azure-container-service-preview/

@@ -1,0 +1,23 @@
+{
+  "asignaturas" : [
+  {
+    "id": 1,
+    "Name": "Matematicas"
+  },
+  {
+    "id": 2,
+    "Name": "Lengua"
+  },
+  {
+    "id": 3,
+    "Name": "História"
+  },
+  {
+    "id": 4,
+    "Name": "Ciencias"
+  },
+  {
+    "id": 5,
+    "Name": "Plástica"
+  }]
+}

@@ -1,0 +1,4 @@
+*.pem
+*.cer
+*.pfx
+**/node_modules/

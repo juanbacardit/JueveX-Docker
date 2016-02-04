@@ -1,0 +1,26 @@
+{ "alumnos" : [
+  {
+    "id": 1,
+    "Name": "Juan Bacardit Barrera",
+    "Age": 33,
+    "Address": "Gran Via 203, 8a planta",
+    "City": "Barcelona",
+    "PostalCode": "08023"
+  },
+  {
+    "id": 2,
+    "Name": "Lucía Fernández Lucas",
+    "Age": 23,
+    "Address": "Balmes 33, 4a planta",
+    "City": "Barcelona",
+    "PostalCode": "08022"
+  },
+  {
+    "id":3,
+    "Name" : "Juan Bacardit Barrera",
+    "Age": 43,
+    "Address": "Pere Rossinyoñ 3, 1er 3a",
+    "City": "Cardedeu",
+    "PostalCode": "08252"
+  }]
+}

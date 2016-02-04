@@ -1,0 +1,28 @@
+{
+  "name": "server1",
+  "version": "1.0.0",
+  "description": "web api for calculate dni letter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "fs": "0.0.2",
+    "mongoose": "^4.4.1",
+    "require": "^2.4.20"
+  },
+  "dependencies": 
+
+{	
+"body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "fs": "0.0.2",
+    "mongoose": "^4.4.1",
+    "require": "^2.4.20"}
+
+
+}
